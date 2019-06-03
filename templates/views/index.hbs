@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>
+      {{name}}
+    </title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="/js/app.js" defer></script>
+  </head>
+  <body>
+    <div class="main-content">
+        {{>header}}
+
+        <p>
+          Enter your location to get the weather.
+        </p>
+
+        <form id="form">
+          <input placeholder="Your city"/>
+          <button>Search</button>
+        </form>
+
+        <p id="pOne">
+
+        </p>
+        <p id="pTwo">
+
+        </p>
+    </div>
+
+    {{>footer}}
+  </body>
+</html>
