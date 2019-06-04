@@ -5,7 +5,6 @@ const weatherForm = document.querySelector('form')
 const search = document.querySelector('input')
 const pOne = document.querySelector('#pOne')
 const pTwo = document.querySelector('#pTwo')
-const pThree = document.querySelector('#pThree')
 
 weatherForm.addEventListener('submit', (e) => {
   e.preventDefault()  // Prevent page from refreshing
@@ -35,7 +34,6 @@ weatherForm.addEventListener('submit', (e) => {
       } else {
         pOne.innerHTML = data.location
         pTwo.innerHTML = data.data
-        pThree.innerHTML = data.summary
       }
       console.log('End dynamic query')
     })
