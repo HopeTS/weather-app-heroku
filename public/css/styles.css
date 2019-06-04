@@ -1,7 +1,37 @@
 h1 {
-  color: red;
+  color: #444;
 }
 
 body {
   font-family: arial;
+  font-size: 1.3em;
+}
+
+.main-content {
+  width: 60vw;
+  margin-left: 20vw;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 20vw;
+  right: 20vw;
+  top: 95vh;
+  color: #aaa;
+  border-top: 1px solid #aaa;
+}
+
+button {
+  border: 0px;
+  background-color: #999;
+  color: white;
+  font-size: 1.2em;
+  height: 1.8em;
+}
+
+input {
+  border: 1px solid #999;
+  height: 1.6em;
+  font-size: 1.2em;
 }
