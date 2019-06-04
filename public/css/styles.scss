@@ -1,0 +1,63 @@
+
+//Breakpoints
+$phone:"only screen and (min-width: 200px)";
+$tablet:"only screen and (min-width: 768px)";
+$desktop:"only screen and (min-width: 1200px)";
+
+h1 {
+  color: #444;
+}
+
+body {
+  font-family: arial;
+}
+
+.main-content {
+  @media #{$phone} {
+    width: 100vw;
+    margin-left: 0;
+    p {
+      font-size: 1.2em;
+    }
+  }
+  @media #{$tablet} {
+    width: 80vw;
+    margin-left: 10vw;
+  }
+  @media #{$desktop} {
+    width: 60vw;
+    margin-left: 20vw;
+  }
+}
+
+#page-title {
+  font-size: 2.2em;
+}
+
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 20vw;
+  right: 20vw;
+  top: 95vh;
+  color: #aaa;
+  border-top: 1px solid #aaa;
+  @media #{$phone} {
+    left: 0;
+    right: 0;
+  }
+}
+
+button {
+  border: 0px;
+  background-color: #999;
+  color: white;
+  font-size: 1.2em;
+  height: 1.8em;
+}
+
+input {
+  border: 1px solid #999;
+  height: 1.6em;
+  font-size: 1.2em;
+}

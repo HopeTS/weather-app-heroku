@@ -1,16 +1,26 @@
 h1 {
-  color: #444;
-}
+  color: #444; }
 
 body {
-  font-family: arial;
-  font-size: 1.3em;
-}
+  font-family: arial; }
 
-.main-content {
-  width: 60vw;
-  margin-left: 20vw;
-}
+@media only screen and (min-width: 200px) {
+  .main-content {
+    width: 100vw;
+    margin-left: 0; }
+    .main-content p {
+      font-size: 1.2em; } }
+@media only screen and (min-width: 768px) {
+  .main-content {
+    width: 80vw;
+    margin-left: 10vw; } }
+@media only screen and (min-width: 1200px) {
+  .main-content {
+    width: 60vw;
+    margin-left: 20vw; } }
+
+#page-title {
+  font-size: 2.2em; }
 
 #footer {
   position: fixed;
@@ -19,19 +29,22 @@ body {
   right: 20vw;
   top: 95vh;
   color: #aaa;
-  border-top: 1px solid #aaa;
-}
+  border-top: 1px solid #aaa; }
+  @media only screen and (min-width: 200px) {
+    #footer {
+      left: 0;
+      right: 0; } }
 
 button {
   border: 0px;
   background-color: #999;
   color: white;
   font-size: 1.2em;
-  height: 1.8em;
-}
+  height: 1.8em; }
 
 input {
   border: 1px solid #999;
   height: 1.6em;
-  font-size: 1.2em;
-}
+  font-size: 1.2em; }
+
+/*# sourceMappingURL=styles.css.map */
