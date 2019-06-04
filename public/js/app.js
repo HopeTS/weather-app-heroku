@@ -14,7 +14,6 @@ weatherForm.addEventListener('submit', (e) => {
     return
   }
   const location = search.value.replace(' ', '-')
-  console.log(location)
 
   pOne.innerHTML = 'Loading...'
   pTwo.innerHTML = ''
@@ -26,7 +25,6 @@ weatherForm.addEventListener('submit', (e) => {
   fetch(queryURL).then((response) => {
 
     response.json().then((data) => {
-      console.log('Dynamic query')
       if (data.error) {
         console.log(data.error)
         pOne.innerHTML = data.error
@@ -34,9 +32,6 @@ weatherForm.addEventListener('submit', (e) => {
         pOne.innerHTML = data.location
         pTwo.innerHTML = data.data
       }
-      console.log('End dynamic query')
     })
   })
-
-  console.log('Form submitted!')
 })
