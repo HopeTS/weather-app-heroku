@@ -15,9 +15,11 @@ const weather = (latitude, longitude, callback) => {
     } else if (body.error) {
       console.log('Something went wrong with DarkSky')
     } else {
+      console.log(body.daily.summary)
       const temp = body.currently.temperature.toString()
       const rainChance = body.currently.precipProbability.toString()
-      const string = body.daily.data[0].summary + ' It is currently ' + temp + ' degrees out. There is a ' + rainChance + '% chance of rain.'
+      const humidity = body.currently.humidity * 100
+      const string = body.daily.data[0].summary + ' It is currently ' + temp + ' degrees out.\n There is a ' + rainChance + '% chance of rain.\n There is ' + humidity + '% humidity.'
       callback(undefined, string)
     }
   })
