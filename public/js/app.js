@@ -20,7 +20,7 @@ weatherForm.addEventListener('submit', (e) => {
   pTwo.innerHTML = ''
 
   // Generate query URL
-  const queryURL = 'http://localhost:3000/weather?address=' + location
+  const queryURL = '/weather?address=' + location
 
   // Fetch data and log json object
   fetch(queryURL).then((response) => {
