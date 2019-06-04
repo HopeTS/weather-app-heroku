@@ -18,7 +18,6 @@ weatherForm.addEventListener('submit', (e) => {
 
   pOne.innerHTML = 'Loading...'
   pTwo.innerHTML = ''
-  pThree.innerHTML = ''
 
   // Generate query URL
   const queryURL = '/weather?address=' + location
