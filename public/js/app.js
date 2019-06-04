@@ -9,6 +9,10 @@ const pTwo = document.querySelector('#pTwo')
 weatherForm.addEventListener('submit', (e) => {
   e.preventDefault()  // Prevent page from refreshing
 
+  if (search.value.replace(' ', '') === '') {
+    pOne.innerHTML = 'Cannot get weather without a location!'
+    return
+  }
   const location = search.value.replace(' ', '-')
   console.log(location)
 
